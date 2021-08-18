@@ -43,14 +43,14 @@ vless 性能更加优秀，占用资源更少。
 ```bash
 * 客户端下载：https://github.com/2dust/v2rayN/releases
 * 代理协议：vless 或 vmess
-* 地址：wing601.herokuapp.com
+* 地址：melvinpacheco.herokuapp.com
 * 端口：443
 * 默认UUID：37a63d5e-0034-11ec-9a03-0242ac130003
 * vmess额外id：0
 * 加密：none
 * 传输协议：ws
 * 伪装类型：none
-* 伪装域名：wing601.workers.dev(CF Workers反代地址)
+* 伪装域名：melvinpacheco.workers.dev(CF Workers反代地址)
 * 路径：/37a63d5e-0034-11ec-9a03-0242ac130003-vless // 默认vless使用(/自定义UUID码-vless)，vmess使用(/自定义UUID码-vmess)
 * 底层传输安全：tls
 * 跳过证书验证：false
@@ -66,7 +66,7 @@ vless 性能更加优秀，占用资源更少。
     "run_type": "client",
     "local_addr": "127.0.0.1",
     "local_port": 1080,
-    "remote_addr": "wing601.herokuapp.com",
+    "remote_addr": "melvinpacheco.herokuapp.com",
     "remote_port": 443,
     "password": [
         "37a63d5e-0034-11ec-9a03-0242ac130003"
@@ -74,7 +74,7 @@ vless 性能更加优秀，占用资源更少。
     "websocket": {
         "enabled": true,
         "path": "/37a63d5e-0034-11ec-9a03-0242ac130003-trojan",
-        "host": "wing601.herokuapp.com"
+        "host": "melvinpacheco.herokuapp.com"
     }
 }
 ```
@@ -85,12 +85,12 @@ vless 性能更加优秀，占用资源更少。
 
 ```bash
 * 客户端下载：https://github.com/shadowsocks/shadowsocks-windows/releases/
-* 服务器地址: wing601.herokuapp.com
+* 服务器地址: melvinpacheco.herokuapp.com
 * 端口: 443
 * 密码：37a63d5e-0034-11ec-9a03-0242ac130003
 * 加密：chacha20-ietf-poly1305
 * 插件程序：xray-plugin_windows_amd64.exe  //需将插件https://github.com/shadowsocks/xray-plugin/releases下载解压后放至shadowsocks同目录
-* 插件选项: tls;host=wing601.herokuapp.com;path=/37a63d5e-0034-11ec-9a03-0242ac130003-ss
+* 插件选项: tls;host=melvinpacheco.herokuapp.com;path=/37a63d5e-0034-11ec-9a03-0242ac130003-ss
 ```
 </details>
 
@@ -98,8 +98,8 @@ vless 性能更加优秀，占用资源更少。
 <summary>可以使用Cloudflare的Workers来中转流量，（支持VLESS\VMESS\Trojan-Go的WS模式）配置为：</summary>
 
 ```js
-const SingleDay = 'wing601.herokuapp.com'
-const DoubleDay = 'wing601.herokuapp.com'
+const SingleDay = 'melvinpacheco.herokuapp.com'
+const DoubleDay = 'melvinpacheco.herokuapp.com'
 addEventListener(
     "fetch",event => {
     
